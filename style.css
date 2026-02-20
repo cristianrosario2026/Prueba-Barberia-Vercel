@@ -357,18 +357,49 @@ textarea {
     background-color: #070707;
 }
 
+/* ===== PAGINA GRACIAS ===== */
 
 .gracias {
+    position: relative;
     min-height: 100vh;
+    width: 100%;
+    
+    background: url("IMAGENES/bg.jpg") no-repeat center center;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.gracias-content {
-    max-width: 600px;
+.gracias::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
 }
+
+.gracias-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.gracias-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.gracias-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* ===== RESPONSIVE ===== */
 
 @media (max-width:991px) {
     .menu {
@@ -508,5 +539,4 @@ textarea {
     textarea {
         width: 250px !important;
     }
-
 }
