@@ -357,6 +357,19 @@ textarea {
     background-color: #070707;
 }
 
+
+.gracias {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gracias-content {
+    max-width: 600px;
+}
+
 @media (max-width:991px) {
     .menu {
         padding: 20px;
