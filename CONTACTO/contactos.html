@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia</title>
+    <link rel="icon" href="../IMAGENES/icono.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../IMAGENES/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../precios.html">Precios</a></li>
+                    <li><a href="../estilistas.html">Estilistas</a></li>
+                    <li><a href="../CONTACTO/contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    <footer>
+        <div class="footer-bg">
+            <h2>Reserva una cita</h2>
+            <form action="https://formsubmit.co/cristianrosarioalarconalarcon@gmail.com" method="POST">
+                <div class="campo-1">
+                    <input class="campo" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="campo" type="number" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="text" name="direccion" placeholder="Dirección" required>
+                    <input class="campo" type="email" name="correo" placeholder="Correo" required>
+                </div>
+                <textarea class="campo" name="mensaje" cols="30" rows="10" placeholder="Texto" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+        </div>
+        <div class="footer-txt">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
