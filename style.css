@@ -401,27 +401,29 @@ textarea {
 
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
     bottom: 25px;
     left: 25px;
-    background-color: #25D366;
-    border-radius: 50%;
+    background-color: #0d9744;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 1000;
     transition: 0.3s ease;
 }
 
 .whatsapp-float img {
-    width: 35px;
+    width: 28px;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #1ebe5d;
+    background-color: #0d9744;
+    transform: scale(1.05);
 }
 
 
