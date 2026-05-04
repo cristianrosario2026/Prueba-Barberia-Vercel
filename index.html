@@ -15,18 +15,20 @@
     <!-- ENCABEZADO -->
     <header class="header" id="inicio">
         <div class="menu container">
+            <div class="logo-text">BARBER SHOP</div>
             <input type="checkbox" id="menu">
             <label for="menu">
+                
                 <img src="IMAGENES/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
-                <div class="logo">BARBER SHOP</div>
+                
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#estilistas">Estilistas</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
+                    <li><a href="#inicio" onclick="cerrarMenu()">Inicio</a></li>
+                    <li><a href="#servicios" onclick="cerrarMenu()">Servicios</a></li>
+                    <li><a href="#precios" onclick="cerrarMenu()">Precios</a></li>
+                    <li><a href="#estilistas" onclick="cerrarMenu()">Estilistas</a></li>
+                    <li><a href="#contactos" onclick="cerrarMenu()">Contactos</a></li>
                 </ul>
             </nav>
         </div>
@@ -226,12 +228,13 @@
                 <textarea class="campo" name="mensaje" cols="30" rows="10" placeholder="Texto" required></textarea>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="submit" value="Enviar" class="btn-1">
-            </form>
-            <a href="https://wa.me/5216675242049?text=💇‍♂️ ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
-                target="_blank" class="whatsapp-float">
+                <a href="https://wa.me/5216675242049?text=💇‍♂️ ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
+                target="_blank" class="btn-whatsapp">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
                 <span>Reserva por WhatsApp</span>
             </a>
+            </form>
+            
         </div>
     </section>
 
@@ -239,6 +242,7 @@
     <div class="footer-txt">
         <p>© 2026 Barberia El Kitin | Los Mochis, Sinaloa, México.</p>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

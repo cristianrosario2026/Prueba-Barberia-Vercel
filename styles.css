@@ -48,9 +48,9 @@ body {
     flex-wrap: nowrap;
 }
 
-.logo {
-    font-size: 28px;
+.logo-text {
     color: #CF2D3A;
+    font-size: 22px;
     font-weight: bold;
     margin-right: 20px;
 }
@@ -58,7 +58,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -78,17 +78,16 @@ body {
 }
 
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #FFFFFF;
-    display: block;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
 }
 
 .menu .navbar ul li a:hover {
     color: #CF2D3A;
 }
 
-#menu:checked ~ .navbar {
+#menu:checked~.navbar {
     display: block;
 }
 
@@ -103,6 +102,7 @@ body {
 .menu label {
     cursor: pointer;
     display: none;
+    margin-left: auto;
 }
 
 .header-txt {
@@ -430,36 +430,45 @@ textarea {
     margin-bottom: 25px;
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    left: 25px;
-    background-color: #0d9744;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 50px;
-    display: flex;
+.btn-whatsapp {
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
+    background: #0d9744;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: 0.3s ease;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 15px auto 0;
 }
 
-.whatsapp-float img {
+.btn-whatsapp img {
     width: 28px;
 }
 
-.whatsapp-float:hover {
-    background-color: #0d9744;
-    transform: scale(1.05);
+.btn-whatsapp:hover:hover {
+    background: #0d9744;
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== RESPONSIVE ===== */
 
 @media (max-width:991px) {
+
+    .logo-text {
+        display: block;
+        color: #CF2D3A;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
     .menu {
         padding: 20px;
     }
@@ -478,9 +487,14 @@ textarea {
     }
 
     .menu .navbar ul li {
-        float: noneS;
+        float: none;
     }
 
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     #menu:checked~.navbar {
         display: initial;
