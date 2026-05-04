@@ -19,11 +19,11 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="precios.html">Precios</a></li>
-                    <li><a href="estilistas.html">Estilistas</a></li>
-                    <li><a href="CONTACTO/contactos.html">Contactos</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Estilistas</a></li>
+                    <li><a href="#">Contactos</a></li>
                 </ul>
             </nav>
         </div>
@@ -115,47 +115,113 @@
     </main>
 
     <section class="prices">
-            <div class="prices-1">
-                <h2>Lista de precios</h2>
+        <div class="prices-1">
+            <h2>Lista de precios</h2>
+            <p>
+                Consulta nuestros precios accesibles en servicios de barbería.
+                Ofrecemos cortes de cabello modernos, arreglo de barba y otros
+                servicios profesionales para que siempre luzcas con el mejor estilo.
+                Nuestros precios están pensados para brindarte calidad y una excelente experiencia.
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Corte</th>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <th>Tinte</th>
+                        <td>$530</td>
+                    </tr>
+                    <tr>
+                        <th>A domicilio</th>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <th>Arreglo de Barba</th>
+                        <td>$120</td>
+                    </tr>
+
+                    <tr>
+                        <th>Corte + Barba</th>
+                        <td>$250</td>
+                    </tr>
+
+                    <tr>
+                        <th>Corte para Niño</th>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="prices-2"></div>
+    </section>
+
+    <section class="personal container">
+        <div class="personal-txt">
+            <h2>Nuestros Estilistas</h2>
+            <hr>
+            <p>
+                Nuestro equipo de estilistas está formado por profesionales con experiencia
+                en barbería moderna y clásica. Cada barbero se especializa en diferentes
+                estilos de corte, arreglo de barba y tendencias actuales para ofrecerte
+                el mejor servicio y ayudarte a encontrar el look perfecto.
+            </p>
+        </div>
+        <div class="personal-group">
+            <div class="personal-1">
+                <img src="IMAGENES/b1.jpg" alt="">
+                <h3>Carlos Ramírez</h3>
                 <p>
-                    Consulta nuestros precios accesibles en servicios de barbería.
-                    Ofrecemos cortes de cabello modernos, arreglo de barba y otros
-                    servicios profesionales para que siempre luzcas con el mejor estilo.
-                    Nuestros precios están pensados para brindarte calidad y una excelente experiencia.
+                    Especialista en cortes modernos y degradados (fade).
                 </p>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Corte</th>
-                            <td>$180</td>
-                        </tr>
-                        <tr>
-                            <th>Tinte</th>
-                            <td>$530</td>
-                        </tr>
-                        <tr>
-                            <th>A domicilio</th>
-                            <td>$1000</td>
-                        </tr>
-                        <tr>
-                            <th>Arreglo de Barba</th>
-                            <td>$120</td>
-                        </tr>
-
-                        <tr>
-                            <th>Corte + Barba</th>
-                            <td>$250</td>
-                        </tr>
-
-                        <tr>
-                            <th>Corte para Niño</th>
-                            <td>$150</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
-            <div class="prices-2"></div>
-        </section>
+            <div class="personal-1">
+                <img src="IMAGENES/b2.jpg" alt="">
+                <h3>José Hernández</h3>
+                <p>
+                    Experto en arreglo de barba y afeitado clásico.
+                </p>
+            </div>
+            <div class="personal-1">
+                <img src="IMAGENES/b3.jpg" alt="">
+                <h3>Luis Martínez</h3>
+                <p>
+                    Especialista en diseños, líneas y estilos personalizados.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bg">
+            <h2>Reserva una cita</h2>
+            <form action="https://formsubmit.co/cristianrosarioalarconalarcon@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pruebabarberiavercel.vercel.app/gracias.html">
+                <div class="campo-1">
+                    <input class="campo" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="campo" type="number" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="text" name="direccion" placeholder="Dirección" required>
+                    <input class="campo" type="email" name="correo" placeholder="Correo" required>
+                </div>
+                <textarea class="campo" name="mensaje" cols="30" rows="10" placeholder="Texto" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+            <a href="https://wa.me/5216675242049?text=💇‍♂️ ¡Hola,%20quiero%20reservar%20una%20cita.%20Gracias.!"
+                target="_blank" class="whatsapp-float">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <span>Reserva por WhatsApp</span>
+            </a>
+        </div>
+        <div class="footer-txt">
+            <p>
+                Barberia El Kitin | Los Mochis, Sinaloa, México.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
