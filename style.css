@@ -31,6 +31,10 @@ body {
     align-items: center;
 }
 
+.header-content {
+    padding-top: 120px;
+}
+
 .menu {
     position: fixed;
     top: 0;
