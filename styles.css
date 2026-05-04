@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-    background-image: url(IMAGENES/bg.jpg);
+    background-image: url(../IMAGENES/bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@ body {
 }
 
 .header-content {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .menu {
@@ -42,24 +42,39 @@ body {
     right: 0;
     width: 100%;
     display: flex;
-    background: black;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     color: #CF2D3A;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
+
 }
 
 .menu .navbar ul li a {
@@ -75,6 +90,10 @@ body {
 
 #menu:checked ~ .navbar {
     display: block;
+}
+
+#menu {
+    display: none;
 }
 
 .menu-icono {
