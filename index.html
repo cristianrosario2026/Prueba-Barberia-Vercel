@@ -8,55 +8,60 @@
     <title>Barbería El Kitin | Los Mochis, Sin.</title>
     <link rel="icon" href="assets/icono.jpg">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <!-- ENCABEZADO -->
-    <header class="header" id="inicio">
-        <div class="menu container">
-            <div class="logo-text">BARBER SHOP</div>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-
-                <img src="assets/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-
-                <ul>
-                    <li><a href="#inicio" onclick="cerrarMenu()">Inicio</a></li>
-                    <li><a href="#servicios" onclick="cerrarMenu()">Servicios</a></li>
-                    <li><a href="#precios" onclick="cerrarMenu()">Precios</a></li>
-                    <li><a href="#estilistas" onclick="cerrarMenu()">Estilistas</a></li>
-                    <li><a href="#contactos" onclick="cerrarMenu()">Contactos</a></li>
+    <header>
+        <div class="contenido-header">
+            <h1>BARBER SHOP</h1>
+            <nav id="nav">
+                <ul id="links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#estilistas">Estilistas</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
                 </ul>
             </nav>
-        </div>
 
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Barberia</h1>
-                <span>El Kitin</span>
-                <p>
-                    Prueba de nuestros servicios aquí con el Kitin en tu barberia de confianza.
-                </p>
-            </div>
-            <div class="header-dir">
-                <div class="dir">
-                    <h3>Dirección</h3>
-                    <p>Los Mochis, Ahome, Sinaloa</p>
-                </div>
-                <div class="dir">
-                    <h3>Teléfono</h3>
-                    <p>6675242049</p>
-                </div>
-                <div class="dir">
-                    <h3>Horario</h3>
-                    <p>10 a.m. a 8 p.m.</p>
-                </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-        </section>
+    </header>
+
+
+
+
+    <section id="inicio">
+    <div class="header-content container">
+        <div class="header-txt">
+            <h1>Barberia</h1>
+            <span>El Kitin</span>
+            <p>
+                Prueba de nuestros servicios aquí con el Kitin en tu barberia de confianza.
+            </p>
+        </div>
+        <div class="header-dir">
+            <div class="dir">
+                <h3>Dirección</h3>
+                <p>Los Mochis, Ahome, Sinaloa</p>
+            </div>
+            <div class="dir">
+                <h3>Teléfono</h3>
+                <p>6675242049</p>
+            </div>
+            <div class="dir">
+                <h3>Horario</h3>
+                <p>10 a.m. a 8 p.m.</p>
+            </div>
+        </div>
+    </div>
+    </section>
     </header>
 
 

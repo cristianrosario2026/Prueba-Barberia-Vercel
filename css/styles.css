@@ -11,16 +11,80 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1F1F1F;
 }
+
+
+/* *********************/
+/*     ENCABEZADO      */
+/* *********************/
+
+header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.contenido-header {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.contenido-header h1 {
+    text-align: center;
+    color: #CF2D3A;
+}
+
+.contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.contenido-header nav ul li a:hover {
+    color: #CF2D3A;
+}
+
+.contenido-header .seleccionado {
+    color: #CF2D3A;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
+
+/* hero */
 .header {
     background-image: url(../images/bg.jpg);
     background-position: center top;
@@ -459,46 +523,39 @@ textarea {
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width:991px) {
+@media screen and (max-width:991px) {
 
-    .logo-text {
-        display: block;
-        color: #CF2D3A;
-        font-size: 20px;
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-    .menu {
-        padding: 20px;
-    }
-
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #1F1F1F;
+    nav {
         display: none;
     }
 
-    .menu .navbar ul li {
-        float: none;
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
     }
 
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
     }
 
-    #menu:checked~.navbar {
-        display: initial;
+    nav.responsive ul li {
+        margin: 10px 0;
     }
+
+    #icono-nav {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+
 
     .header {
         min-height: 0vh;
