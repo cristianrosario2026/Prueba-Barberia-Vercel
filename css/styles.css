@@ -76,17 +76,9 @@ header {
 
 
 
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-
 /* hero */
-.header {
-    background-image: url(../images/bg.jpg);
+#inicio {
+    background-image: url(../images/local.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,6 +89,8 @@ header {
 
 .header-content {
     padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .menu {
